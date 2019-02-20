@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NameGametestsuite"  thread-count="3">
+    <test name="NameGametestcases" thread-count="3">
+        <classes>
+            <class name="test.TestNameGame">
+                <methods>
+                    <include name="test_validate_title_is_present"/>
+                    <include name="test_clicking_photo_increases_tries_counter"/>
+                    <include name="test_StreakCounter_Increment_On_CorrectAnswer"/>
+                    <include name="test_Multiple_StreakCounter_Resets_After_Wrong_Answer"/>
+                    <include name="test_10Random_Selections_Increments_Correct_TriesCounter"/>
+                    <include name="test_Name_Images_Change_After_CorrectAnswer"/>
+                    <include name="test_Frequency_Of_WronglySelectedPeople_More_Than_Correctly_SelectedPeople"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
